@@ -8,9 +8,13 @@
   <ItemGroup>
     <None Remove="PuzzleInput\Day1.txt" />
     <None Remove="PuzzleInput\Day2.txt" />
+    <None Remove="PuzzleInput\Day3.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="PuzzleInput\Day3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="PuzzleInput\Day2.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
