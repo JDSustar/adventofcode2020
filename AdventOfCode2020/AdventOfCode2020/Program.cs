@@ -11,6 +11,7 @@ namespace AdventOfCode2020
             Day2.ExecuteDay2();
             Day3.ExecuteDay();
             Day4.ExecuteDay();
+            Day5.ExecuteDay();
         }
     }
 }
