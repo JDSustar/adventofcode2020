@@ -17,7 +17,9 @@ namespace AdventOfCode2020
         public class AnswerGroup
         {
             public Dictionary<char, int> questions = new Dictionary<char, int>();
+
             public int NumOfAnswers = 0;
+
             public AnswerGroup(string groupString)
             {
                 string[] answers = groupString.Split(Environment.NewLine);
