@@ -74,8 +74,8 @@ namespace AdventOfCode2020
                 }
             }
             
-            Logger.LogMessage(LogLevel.ANSWER, "6A: " + bagsContainingShinyGold);
-            Logger.LogMessage(LogLevel.ANSWER, "6B: " + NumBagsContained(bags, bags.FirstOrDefault(b => b.BagName == "shiny gold")));
+            Logger.LogMessage(LogLevel.ANSWER, "7A: " + bagsContainingShinyGold);
+            Logger.LogMessage(LogLevel.ANSWER, "7B: " + NumBagsContained(bags, bags.FirstOrDefault(b => b.BagName == "shiny gold")));
         }
 
         public static int NumBagsContained(List<Bag> bags, Bag searchBag)
