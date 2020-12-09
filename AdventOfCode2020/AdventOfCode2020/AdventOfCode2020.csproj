@@ -16,9 +16,17 @@
     <None Remove="PuzzleInput\Day7sample.txt" />
     <None Remove="PuzzleInput\Day8.txt" />
     <None Remove="PuzzleInput\Day8sample.txt" />
+    <None Remove="PuzzleInput\Day9.txt" />
+    <None Remove="PuzzleInput\Day9sample.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="PuzzleInput\Day9sample.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PuzzleInput\Day9.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="PuzzleInput\Day8sample.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
