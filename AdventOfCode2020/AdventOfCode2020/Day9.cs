@@ -88,9 +88,6 @@ namespace AdventOfCode2020
             }
 
             Logger.LogMessage(LogLevel.ANSWER, "9A: " + x.CurrentValue);
-            
-            
-
             Logger.LogMessage(LogLevel.ANSWER, "9B: " + x.FindValueSumInContiguousData(x.CurrentValue));
         }
     }

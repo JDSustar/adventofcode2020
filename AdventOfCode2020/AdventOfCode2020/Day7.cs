@@ -47,7 +47,7 @@ namespace AdventOfCode2020
             }
         }
 
-        public static void ExecuteDay(string fileLocation = "PuzzleInput/Day7.txt")
+        public static void ExecuteDay(string fileLocation = "PuzzleInput/Day7chris.txt")
         {
             string[] bagLines = File.ReadAllText(fileLocation).Split(Environment.NewLine);
 
