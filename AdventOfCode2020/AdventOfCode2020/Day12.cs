@@ -73,6 +73,7 @@ namespace AdventOfCode2020
         {
             foreach (var routeInstruction in RouteInstructions)
             {
+                Logger.LogMessage(LogLevel.DEBUG, CurrentPosition + " : " + CurrentWaypoint);
                 var action = routeInstruction[0];
                 int value = int.Parse(routeInstruction.Substring(1));
 
@@ -129,11 +130,7 @@ namespace AdventOfCode2020
 
         private void Turn(TurningDirections td, int times)
         {
-            var currentHeadingInt = ((((int) td * times) + (int) CurrentHeading) % 4);
-            if (currentHeadingInt < 0)
-            {
-                currentHeadingInt += 4;
-            }
+            var currentHeadingInt = ((((int) td * times) + (int) CurrentHeading + 4) % 4);
 
             CurrentHeading = (CardinalDirections)currentHeadingInt;
         }

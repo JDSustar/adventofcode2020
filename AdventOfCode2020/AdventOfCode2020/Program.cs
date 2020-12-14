@@ -6,7 +6,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            Logger.CURRENT_LOG_LEVEL = LogLevel.ANSWER;
+            Logger.CURRENT_LOG_LEVEL = LogLevel.DEBUG;
             //Day1.ExecuteDay1();
             //Day2.ExecuteDay2();
             //Day3.ExecuteDay();
@@ -18,7 +18,8 @@ namespace AdventOfCode2020
             //Day9.ExecuteDay();
             //Day10.ExecuteDay();
             //Day11.ExecuteDay();
-            Day12.ExecuteDay();
+            //Day12.ExecuteDay();
+            Day13.ExecuteDay();
         }
     }
 }

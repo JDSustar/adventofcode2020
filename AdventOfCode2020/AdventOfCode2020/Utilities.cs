@@ -104,4 +104,33 @@ namespace AdventOfCode2020
             return this.X.GetHashCode() + this.Y.GetHashCode();
         }
     }
+
+    public static class ChineseRemainderTheorem
+    {
+        public static long Solve(long[] n, long[] a)
+        {
+            long prod = n.Aggregate((long)1, (i, j) => (long)i * (long)j);
+            long p;
+            long sm = 0;
+            for (int i = 0; i < n.Length; i++)
+            {
+                p = prod / n[i];
+                sm += a[i] * ModularMultiplicativeInverse(p, n[i]) * p;
+            }
+            return sm % prod;
+        }
+
+        private static long ModularMultiplicativeInverse(long a, long mod)
+        {
+            long b = a % mod;
+            for (long x = 1; x < mod; x++)
+            {
+                if ((b * x) % mod == 1)
+                {
+                    return x;
+                }
+            }
+            return 1;
+        }
+    }
 }
